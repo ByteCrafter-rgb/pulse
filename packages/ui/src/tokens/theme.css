@@ -1,0 +1,75 @@
+@import "./tokens.css";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-*: initial;
+}
+
+@theme inline {
+  --color-surface: var(--pulse-color-surface);
+  --color-surface-subtle: var(--pulse-color-surface-subtle);
+  --color-surface-raised: var(--pulse-color-surface-raised);
+  --color-overlay: var(--pulse-color-overlay);
+  --color-text: var(--pulse-color-text);
+  --color-text-muted: var(--pulse-color-text-muted);
+  --color-text-inverse: var(--pulse-color-text-inverse);
+  --color-border: var(--pulse-color-border);
+  --color-border-strong: var(--pulse-color-border-strong);
+  --color-accent: var(--pulse-color-accent);
+  --color-accent-hover: var(--pulse-color-accent-hover);
+  --color-accent-fg: var(--pulse-color-accent-fg);
+  --color-accent-subtle: var(--pulse-color-accent-subtle);
+  --color-success: var(--pulse-color-success);
+  --color-success-fg: var(--pulse-color-success-fg);
+  --color-warning: var(--pulse-color-warning);
+  --color-warning-fg: var(--pulse-color-warning-fg);
+  --color-danger: var(--pulse-color-danger);
+  --color-danger-hover: var(--pulse-color-danger-hover);
+  --color-danger-fg: var(--pulse-color-danger-fg);
+  --color-focus: var(--pulse-color-focus);
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --spacing-xs: var(--pulse-space-xs);
+  --spacing-sm: var(--pulse-space-sm);
+  --spacing-md: var(--pulse-space-md);
+  --spacing-lg: var(--pulse-space-lg);
+  --spacing-xl: var(--pulse-space-xl);
+  --spacing-2xl: var(--pulse-space-2xl);
+  --spacing-3xl: var(--pulse-space-3xl);
+
+  --font-sans: var(--pulse-font-sans);
+  --font-mono: var(--pulse-font-mono);
+
+  --text-xs: var(--pulse-text-xs);
+  --text-xs--line-height: var(--pulse-text-xs-lh);
+  --text-sm: var(--pulse-text-sm);
+  --text-sm--line-height: var(--pulse-text-sm-lh);
+  --text-md: var(--pulse-text-md);
+  --text-md--line-height: var(--pulse-text-md-lh);
+  --text-lg: var(--pulse-text-lg);
+  --text-lg--line-height: var(--pulse-text-lg-lh);
+  --text-xl: var(--pulse-text-xl);
+  --text-xl--line-height: var(--pulse-text-xl-lh);
+  --text-2xl: var(--pulse-text-2xl);
+  --text-2xl--line-height: var(--pulse-text-2xl-lh);
+
+  --font-weight-regular: var(--pulse-weight-regular);
+  --font-weight-medium: var(--pulse-weight-medium);
+  --font-weight-semibold: var(--pulse-weight-semibold);
+
+  --radius-sm: var(--pulse-radius-sm);
+  --radius-md: var(--pulse-radius-md);
+  --radius-lg: var(--pulse-radius-lg);
+  --radius-full: var(--pulse-radius-full);
+
+  --shadow-sm: var(--pulse-shadow-sm);
+  --shadow-md: var(--pulse-shadow-md);
+  --shadow-lg: var(--pulse-shadow-lg);
+}
+
+@utility focus-ring {
+  outline: 2px solid var(--pulse-color-focus);
+  outline-offset: 2px;
+}

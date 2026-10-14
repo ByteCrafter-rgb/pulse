@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../src/tokens/theme.css";
+
+@source "../src";
+
+body {
+  background: var(--pulse-color-surface);
+  color: var(--pulse-color-text);
+}
